@@ -13,12 +13,18 @@ class DetailViewController: UIViewController {
     
     
     @IBOutlet var nameTextField: UITextField!
-  
+    @IBOutlet var styleTextField: UITextField!
+    @IBOutlet var dateCreatedTextField: UITextField!
     
     @IBAction func submitButton(_ sender: Any) {
         
         guard let name = nameTextField.text else { return }
-        ItemStore.sharedInstance.createItem(name: name)
+        guard let style = styleTextField.text else { return }
+        guard let dateCreated = dateCreatedTextField.text else {return}
+        
+        ItemStore.sharedInstance.createItem(name: name, style: style, dateCreated: dateCreated)
+        
+        
         
         
         

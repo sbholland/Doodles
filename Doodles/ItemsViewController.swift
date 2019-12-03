@@ -33,8 +33,8 @@ class ItemsViewController: UITableViewController {
         
         
         cell.nameLabel?.text = ItemStore.sharedInstance.allItems[indexPath.row].name
-//        cell.styleLabel?.text = ItemStore.sharedInstance.allItems[indexPath.row].style
-//        cell.dateCreatedLabel?.text = ItemStore.sharedInstance.allItems[indexPath.row].dateCreated
+        cell.styleLabel?.text = ItemStore.sharedInstance.allItems[indexPath.row].style
+        cell.dateCreatedLabel?.text = ItemStore.sharedInstance.allItems[indexPath.row].dateCreated
         
         
         // Set the text on the cell with the description of the item
@@ -43,6 +43,22 @@ class ItemsViewController: UITableViewController {
         
         return cell
     }
+    
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        
+        if editingStyle == .delete {
+            
+            // remove the item from the data model
+            ItemStore.sharedInstance.allItems.remove(at: indexPath.row)
+            
+            // delete the table view row
+            tableView.deleteRows(at: [indexPath], with: .fade)
+            
+        } else if editingStyle == .insert {
+            // Not used in our example, but if you were adding a new row, this is where you would do it.
+        }
+    }
+
 
 
     

@@ -11,12 +11,14 @@ import Foundation
 class  Item: NSObject {
     
     var name: String
-//    var dateCreated: String
-//    var style: String
+    var style: String
+    var dateCreated: String
+
     
-    init(name: String /*, dateCreated: String, style: String */) {
+    init(name: String, style: String, dateCreated: String)  {
         self.name = name
-        //self.dateCreated = dateCreated
-        //self.style = style
+        self.style = style
+        self.dateCreated = dateCreated
+        
     }
 }

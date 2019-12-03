@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1Mm-n8-JTg">
-    <device id="retina6_1" orientation="portrait">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -14,19 +14,19 @@
             <objects>
                 <tableViewController id="sb4-zJ-pYH" customClass="ItemsViewController" customModule="Doodles" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="150" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="tX0-VT-AX0">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ItemCell" rowHeight="150" id="7P6-bN-5gl" userLabel="ItemCell" customClass="ItemCell" customModule="Doodles" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="414" height="150"/>
+                                <rect key="frame" x="0.0" y="28" width="375" height="150"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="7P6-bN-5gl" id="oWc-oe-KYR">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="149.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="149.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o3l-k2-G67" userLabel="Style Label">
-                                            <rect key="frame" x="352" y="64.5" width="42" height="20.5"/>
+                                            <rect key="frame" x="313" y="64.5" width="42" height="20.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -85,35 +85,54 @@
             <objects>
                 <viewController id="5nQ-fS-vRZ" customClass="DetailViewController" customModule="Doodles" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oER-7T-rDf">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wFh-x4-AMj">
-                                <rect key="frame" x="184" y="460" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="submitButton:" destination="5nQ-fS-vRZ" eventType="touchUpInside" id="tYU-h3-GGI"/>
-                                </connections>
-                            </button>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MId-r4-HDl">
-                                <rect key="frame" x="20" y="174" width="374" height="30"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter a title for this piece" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MId-r4-HDl">
+                                <rect key="frame" x="16" y="150" width="343" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter a style (ie: Canvas, 3D, etc)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xZc-pE-i9d" userLabel="Style Text Field">
+                                <rect key="frame" x="16" y="257" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter date created" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UFJ-sX-0Lr" userLabel="Date Created Text Field">
+                                <rect key="frame" x="16" y="351" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wFh-x4-AMj" userLabel="Submit Button">
+                                <rect key="frame" x="183" y="328" width="49" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Submit"/>
+                                <connections>
+                                    <action selector="submitButton:" destination="5nQ-fS-vRZ" eventType="touchUpInside" id="tYU-h3-GGI"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="p54-ap-3u9" firstAttribute="trailing" secondItem="MId-r4-HDl" secondAttribute="trailing" constant="20" id="CF5-6g-8fy"/>
-                            <constraint firstItem="wFh-x4-AMj" firstAttribute="centerX" secondItem="p54-ap-3u9" secondAttribute="centerX" id="CKG-aO-Jsi"/>
-                            <constraint firstItem="MId-r4-HDl" firstAttribute="top" secondItem="p54-ap-3u9" secondAttribute="top" constant="86" id="OkM-Cr-QND"/>
-                            <constraint firstItem="MId-r4-HDl" firstAttribute="leading" secondItem="p54-ap-3u9" secondAttribute="leading" constant="20" id="PTR-KF-Ul5"/>
-                            <constraint firstItem="wFh-x4-AMj" firstAttribute="centerY" secondItem="p54-ap-3u9" secondAttribute="centerY" id="c4O-HE-ybu"/>
+                            <constraint firstItem="MId-r4-HDl" firstAttribute="top" secondItem="p54-ap-3u9" secondAttribute="top" constant="86" id="6Hp-lN-Usa"/>
+                            <constraint firstItem="xZc-pE-i9d" firstAttribute="top" secondItem="MId-r4-HDl" secondAttribute="bottom" constant="77" id="Cgo-YG-hjd"/>
+                            <constraint firstItem="xZc-pE-i9d" firstAttribute="leading" secondItem="UFJ-sX-0Lr" secondAttribute="leading" id="F53-sn-bXt"/>
+                            <constraint firstItem="UFJ-sX-0Lr" firstAttribute="top" secondItem="xZc-pE-i9d" secondAttribute="bottom" constant="64" id="NRP-8u-ntz"/>
+                            <constraint firstItem="xZc-pE-i9d" firstAttribute="trailing" secondItem="UFJ-sX-0Lr" secondAttribute="trailing" id="Xum-xL-ybu"/>
+                            <constraint firstItem="MId-r4-HDl" firstAttribute="leading" secondItem="xZc-pE-i9d" secondAttribute="leading" id="dag-gh-mZb"/>
+                            <constraint firstItem="MId-r4-HDl" firstAttribute="trailing" secondItem="oER-7T-rDf" secondAttribute="trailingMargin" id="gcF-nQ-u7J"/>
+                            <constraint firstItem="MId-r4-HDl" firstAttribute="leading" secondItem="oER-7T-rDf" secondAttribute="leadingMargin" id="hAx-Yw-RhI"/>
+                            <constraint firstItem="MId-r4-HDl" firstAttribute="trailing" secondItem="xZc-pE-i9d" secondAttribute="trailing" id="y5D-od-75Y"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="p54-ap-3u9"/>
                     </view>
                     <connections>
+                        <outlet property="dateCreatedTextField" destination="UFJ-sX-0Lr" id="5aa-9a-0VI"/>
                         <outlet property="nameTextField" destination="MId-r4-HDl" id="dBD-p2-o5D"/>
+                        <outlet property="styleTextField" destination="xZc-pE-i9d" id="FaF-8O-L30"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8En-sg-yo9" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -125,7 +144,7 @@
             <objects>
                 <navigationController id="1Mm-n8-JTg" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="qWh-cN-U1b">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
