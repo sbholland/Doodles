@@ -16,4 +16,7 @@ class ItemCell: UITableViewCell {
     @IBOutlet var styleLabel: UILabel!
     
     @IBOutlet var dateCreatedLabel: UILabel!
+    
+    
+    @IBOutlet var suggestedPriceLabel: UILabel!
 }

@@ -21,8 +21,9 @@ class ItemStore {
         return instance
     }()
     
-    func createItem(name: String, style: String, dateCreated: String) {
-        let newItem = Item(name: name , style: style, dateCreated: dateCreated)
+    func createItem(name: String, style: String, dateCreated: String, hoursSpent: Int, materialsUsed: Int) {
+        let newItem = Item(name: name , style: style, dateCreated: dateCreated, hoursSpent: hoursSpent, materialsUsed: materialsUsed)
+        
         
         allItems.append(newItem)
         

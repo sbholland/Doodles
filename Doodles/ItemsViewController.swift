@@ -36,10 +36,12 @@ class ItemsViewController: UITableViewController {
         cell.styleLabel?.text = ItemStore.sharedInstance.allItems[indexPath.row].style
         cell.dateCreatedLabel?.text = ItemStore.sharedInstance.allItems[indexPath.row].dateCreated
         
+        var intHoursSpent = Int(ItemStore.sharedInstance.allItems[indexPath.row].hoursSpent)
+        var intMaterialsUsed = Int(ItemStore.sharedInstance.allItems[indexPath.row].materialsUsed)
         
-        // Set the text on the cell with the description of the item
-        // that is at the nth index of items, where n = row this cell
-        // will appear in on the tableview
+        var suggestedPrice = intHoursSpent * 10 + intMaterialsUsed
+        
+        cell.suggestedPriceLabel?.text = String(describing: suggestedPrice ?? 0)
         
         return cell
     }
