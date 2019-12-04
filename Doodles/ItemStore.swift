@@ -26,5 +26,8 @@ class ItemStore {
         
         allItems.append(newItem)
         
+        
+        
+        
     }
 }

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		072FA7BD2396AD14002FCB84 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072FA7BC2396AD14002FCB84 /* DetailViewController.swift */; };
+		075D2E3F23981BF7009B78F5 /* MockApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075D2E3E23981BF7009B78F5 /* MockApi.swift */; };
 		0765D705238C38B400F3E9D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0765D704238C38B400F3E9D8 /* AppDelegate.swift */; };
 		0765D707238C38B400F3E9D8 /* ItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0765D706238C38B400F3E9D8 /* ItemsViewController.swift */; };
 		0765D70A238C38B400F3E9D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0765D708238C38B400F3E9D8 /* Main.storyboard */; };
@@ -31,6 +32,7 @@
 
 /* Begin PBXFileReference section */
 		072FA7BC2396AD14002FCB84 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		075D2E3E23981BF7009B78F5 /* MockApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockApi.swift; sourceTree = "<group>"; };
 		0765D701238C38B400F3E9D8 /* Doodles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Doodles.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0765D704238C38B400F3E9D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0765D706238C38B400F3E9D8 /* ItemsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsViewController.swift; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 				0765D704238C38B400F3E9D8 /* AppDelegate.swift */,
 				0765D706238C38B400F3E9D8 /* ItemsViewController.swift */,
 				0765D708238C38B400F3E9D8 /* Main.storyboard */,
+				075D2E3E23981BF7009B78F5 /* MockApi.swift */,
 				072FA7BC2396AD14002FCB84 /* DetailViewController.swift */,
 				07B619D123957DB400527881 /* ItemStore.swift */,
 				07B619D323957DFE00527881 /* Item.swift */,
@@ -215,6 +218,7 @@
 				072FA7BD2396AD14002FCB84 /* DetailViewController.swift in Sources */,
 				07B619D223957DB400527881 /* ItemStore.swift in Sources */,
 				0765D725238C3B3800F3E9D8 /* ItemCell.swift in Sources */,
+				075D2E3F23981BF7009B78F5 /* MockApi.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
